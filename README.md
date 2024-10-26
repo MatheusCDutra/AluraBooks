@@ -1,1 +1,3 @@
 # AluraBooks
+
+> Status: Em desenvolvimento
