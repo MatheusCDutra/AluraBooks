@@ -1,0 +1,9 @@
+:root {
+  --cor-de-fundo: #EBECEE;
+}
+
+/*reset.css resetando estilos do navegador*/
+
+body {
+  background-color: var(--cor-de-fundo);
+}
