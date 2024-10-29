@@ -3,6 +3,7 @@ background-color: var(--branco);
 display: flex;
 justify-content: space-between;
 align-items: center;
+position: relative; /*cria um contexto de posicionamento para filhos position:absolute*/
 }
 
 .cabecalho__container {
@@ -11,8 +12,8 @@ align-items: center;
 }
 
 .cabecalho__menu-hamburguer {
-  width: 48px;
-  height: 48px;
+  width: 24px;
+  height: 24px;
   background-image: url(../assets/img-header/Menu.svg);
   background-repeat: no-repeat; /*não repetir a imagem de background.*/
   background-position: center;
@@ -21,5 +22,37 @@ align-items: center;
 
 .container_imagem {
   padding: 1em;
+}
+
+.lista-menu {
+  display: none; /*esconde a lista-menu*/
+  position: absolute;/*Remove o elemento do fluxo de layout e o posiciona em relação ao seu elemento pai mais próximo com position: relative, absolute ou fixed. Em nosso caso, .cabecalho*/
+  top: 100%; /*o topo do elemento .lista-menu se posicionará 100% fora do header*/
+  width: 60vw;
+}
+
+.container__botao {
+  display: none;
+}
+
+.container__botao:checked~.lista-menu { /* ~ significa: se o input estiver checked então mostrar .lista-menu*/
+  display: block;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item {
+  padding: 1em;
+  background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+  color: var(--laranja);
+  font-weight: 700;
+}
+
+.lista-menu__link {
+  color: var(--azul);
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
