@@ -12,9 +12,9 @@ position: relative; /*cria um contexto de posicionamento para filhos position:ab
 }
 
 .cabecalho__menu-hamburguer {
-  width: 24px;
-  height: 24px;
-  background-image: url(../assets/img-header/Menu.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../assets/imagem/Menu.svg);
   background-repeat: no-repeat; /*não repetir a imagem de background.*/
   background-position: center;
   display: inline-block;
