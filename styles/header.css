@@ -60,6 +60,10 @@ position: relative; /*cria um contexto de posicionamento para filhos position:ab
   display: none;
 }
 
+.container__texto {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   
   .cabecalho__menu-hamburguer{
@@ -106,4 +110,27 @@ position: relative; /*cria um contexto de posicionamento para filhos position:ab
   .opcoes__botao {
     display: none;
   }
+}
+
+@media screen and (min-width: 1728px) {
+  .container__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+  }
+
+  .cabecalho {
+    padding: 0 2em;
+  }
+
+  .opcoes {
+    margin-right: auto;
+  }
+
+  .container__texto {
+    display: block;
+  }
+
+
 }
