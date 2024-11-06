@@ -41,6 +41,10 @@ hr {
   .rodape__titulo {
     font-size: 1.5rem;
   }
+
+  .lista-rodape__item:hover {
+    color: var(--laranja);
+  }
 }
 
 @media screen and (min-width: 1728px) {

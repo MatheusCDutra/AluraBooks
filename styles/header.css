@@ -20,6 +20,14 @@ position: relative; /*cria um contexto de posicionamento para filhos position:ab
   display: inline-block;
 }
 
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
+  background-image: url(../assets/imagem/Menu-berto.svg);
+}
+
+.container__botao:checked~.container__rotulo {
+  background-color: var(--azul);
+}
+
 .container__imagem {
   padding: 1em;
 }
@@ -109,6 +117,23 @@ position: relative; /*cria um contexto de posicionamento para filhos position:ab
 
   .opcoes__botao {
     display: none;
+  }
+
+  .opcoes__botao:checked~.opcoes__rotulo>.opcoes__lista {
+    background: var(--azul-escuro);
+    color: var(--branco);
+  }
+
+  .opcoes__lista {
+    padding: 1em 1em;
+  }
+
+  .lista-menu__item:hover {
+    background-color: var(--azul-escuro);
+  }
+
+  .lista-menu__item:hover>.lista-menu__link {
+    color: var(--branco);
   }
 }
 

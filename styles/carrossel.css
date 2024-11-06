@@ -124,6 +124,10 @@
     margin-right: 2em;
   }
 
+  .card__botoes {
+    margin-right: 2em
+  }
+
   .descricao__titulo {
     font-size: 2rem;
   }
